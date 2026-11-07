@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trimstone Manor Estate & Hotel | North Devon</title>
+  <title>Trimstone Manor Estate & guesthouse | North Devon</title>
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">py
@@ -26,6 +26,57 @@
       <span class="title">Trimstone Manor</span>
       <span class="subtitle">Country Estate & Guesthouse</span>
     </a>
+    <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* Container layout */
+    .social-container {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* Base styling for gold gradient icons */
+    .gold-social-link {
+      font-size: 32px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .gold-social-link i {
+      /* Metallic Gold Gradient */
+      background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+
+    /* Hover and Focus interaction */
+    .gold-social-link:hover {
+      transform: translateY(-4px) scale(1.1);
+      filter: drop-shadow(0px 4px 8px rgba(212, 175, 55, 0.4));
+    }
+  </style>
+</head>
+<body>
+
+  <div class="social-container">
+    <a href="https://facebook.com/trimstone/" target="_blank" rel="noopener noreferrer" class="gold-social-link" aria-label="Facebook">
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+    
+    <a href="https://x.com/trimstonemanor/" target="_blank" rel="noopener noreferrer" class="gold-social-link" aria-label="X (Twitter)">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+    
+    <a href="https://instagram.com/trimstonemanorhotel/" target="_blank" rel="noopener noreferrer" class="gold-social-link" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
     <ul class="nav-links">
       <li><a href="#estate">The Estate</a></li>
       <li><a href="#rooms">Rooms</a></li>
