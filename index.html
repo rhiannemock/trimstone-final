@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trimstone Manor Estate & Hotel | North Devon</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">py
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="top-bar">
+    Trimstone Manor Estate &bull; Woolacombe, Ilfracombe, North Devon
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="main-nav">
+    <a href="#" class="brand-logo">
+      <span class="title">Trimstone Manor</span>
+      <span class="subtitle">Country Estate & Guesthouse</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">The Estate</a></li>
+      <li><a href="#rooms">Rooms</a></li>
+      <li><a href="#cottages">Cottages</a></li>
+      <li><a href="#groups">Group Bookings</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#book" class="btn-gold">Book A Stay</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Sliding Image Bar -->
+  <section class="hero-slider">
+    <div class="slide-container">
+      
+      <!-- Slide 1 -->
+      <div class="slide active" style="background-image: url('assets/images/hotel-main.jpg');">
+        <div class="slide-content">
+          <span class="slide-subtitle">Welcome to North Devon</span>
+          <h1 class="slide-title">Timeless Country Elegance</h1>
+          <p class="slide-desc">Nestled within secluded countryside, offering comfortable secluded cottages and rooms.</p>
+          <a href="#rooms" class="btn-gold">Explore Accommodations</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide" style="background-image: url('assets/images/east-down.jpg');">
+        <div class="slide-content">
+          <span class="slide-subtitle">Heritage Suites & Rooms</span>
+          <h1 class="slide-title">Refined Country Comfort</h1>
+          <p class="slide-desc">Indulge in tailored hospitality amidst historic manor charm.</p>
+          <a href="#rooms" class="btn-gold">View Hotel Rooms</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide" style="background-image: url('assets/images/peacock.jpg');">
+        <div class="slide-content">
+          <span class="slide-subtitle">Self-Catering Holiday Cottages</span>
+          <h1 class="slide-title">Your Manor House Retreat</h1>
+          <p class="slide-desc">Spacious self-catering cottages surrounded by peaceful Devon hills and grounds.</p>
+          <a href="#cottages" class="btn-gold">Discover Cottages</a>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide" style="background-image: url('assets/images/pool.jpg');">
+        <div class="slide-content">
+          <span class="slide-subtitle">Group Bookings</span>
+          <h1 class="slide-title">Your Private Estate Retreat</h1>
+          <p class="slide-desc">Spacious self-catering cottages and manor house rooms surrounded by peaceful Devon hills and grounds.</p>
+          <a href="#groups" class="btn-gold">Discover Group Bookings</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="slider-arrow prev-arrow" id="prevBtn">&#10094;</button>
+    <button class="slider-arrow next-arrow" id="nextBtn">&#10095;</button>
+
+    <!-- Pagination Dots -->
+    <div class="slider-dots">
+      <button class="dot active" data-slide="0"></button>
+      <button class="dot" data-slide="1"></button>
+      <button class="dot" data-slide="2"></button>
+      <button class="dot" data-slide="3"></button>
+    </div>
+  </section>
+
+  <!-- Welcome / Estate Section -->
+  <section id="about" class="section-padding">
+    <div class="container text-center">
+      <span class="section-tag">A Grand Devonshire Sanctuary</span>
+      <h2 class="section-heading">Experience Trimstone Manor</h2>
+      <div class="gold-divider"></div>
+      <p class="welcome-text">
+        Set within tranquil gardens near Ilfracombe and Woolacombe, Trimstone Manor Estate combines classic heritage, understated luxury, and genuine Devon warmth. Whether staying in our main manor guest house rooms or relaxing in our private courtyard cottages, experience the perfect escape.
+      </p>
+    </div>
+  </section>
+
+  <!-- Showcase Cards -->
+  <section id="rooms" class="section-padding" style="background-color: var(--white);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Homely Comfort</span>
+        <h2 class="section-heading">Our Accommodations</h2>
+        <div class="gold-divider"></div>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80');"></div>
+          <div class="card-body">
+            <h3 class="card-title">Manor
+                
+                Suites</h3>
+            <p class="card-text">Elegantly appointed rooms featuring classic furnishings, en-suite bathrooms, and idyllic estate views.</p>
+            <a href="#" class="card-link">Explore Suites &rarr;</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80');"></div>
+          <div class="card-body">
+            <h3 class="card-title">Courtyard Cottages</h3>
+            <p class="card-text">Independent self-catering holiday homes ideal for families, complete with kitchens and cozy lounge spaces.</p>
+            <a href="#" class="card-link">View Cottages &rarr;</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80');"></div>
+          <div class="card-body">
+            <h3 class="card-title">Dining & Lounge</h3>
+            <p class="card-text">Relaxed dining, traditional afternoon tea, and a comfortable resident bar experience.</p>
+            <a href="#" class="card-link">Discover Dining &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-title">TRIMSTONE MANOR</div>
+    <div class="footer-sub">Hotel & Holiday Cottages &bull; West Down, Ilfracombe</div>
+    <p style="font-size: 0.85rem; max-width: 600px; margin: 0 auto;">Trimstone Lane, West Down, Near Ilfracombe, North Devon, EX34 8NR</p>
+    <div class="footer-copyright">
+      &copy; 2026 Trimstone Manor Estate. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="assets/scripts/script.js"></script>
+</body>
+</html>
