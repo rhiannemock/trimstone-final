@@ -851,3 +851,21 @@ nav.navbar {
     min-height: 220px;
   }
 }
+/* ==========================================
+   PAGE HEADER SPACING FIX (Below Sticky Nav)
+   ========================================== */
+
+/* Gives a clean, consistent breathing room below the sticky navigation bar */
+.main-nav + .card-large,
+.main-nav + section,
+.main-nav + div {
+  margin-top: 3rem; /* Adjust this value (e.g., 2rem to 3.5rem) to set your preferred gap */
+}
+
+/* Ensures the container holding your large card has breathing room if placed right below nav */
+.card-large {
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px; /* Aligns with your standard container width */
+}
