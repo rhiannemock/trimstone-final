@@ -61,3 +61,25 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize Autoplay
   startAutoplay();
 });
+
+// Open lightbox when clicking an estate card image
+document.querySelectorAll('.card-img').forEach(cardImg => {
+  cardImg.addEventListener('click', function() {
+    const modal = document.getElementById('imageLightbox');
+    const modalImg = document.getElementById('lightboxImg');
+    
+    // Extract the background-image URL string
+    const bgImage = this.style.backgroundImage;
+    
+    // Clean up the URL string to grab just the web address or path
+    const imageUrl = bgImage.slice(5, -2).replace(/['"]/g, "");
+    
+    modal.style.display = "block";
+    modalImg.src = imageUrl;
+  });
+});
+
+// Close lightbox when clicking the X or anywhere on the background
+function closeLightbox() {
+  document.getElementById('imageLightbox').style.display = "none";
+}

@@ -746,3 +746,68 @@ textarea {
   .slide-title { font-size: 2.2rem; }
   .grid-3 { grid-template-columns: 1fr; }
 }
+/* ==========================================
+   IMAGE LIGHTBOX MODAL
+   ========================================== */
+.card-img {
+  cursor: pointer; /* Changes cursor to a pointer so users know it's clickable */
+  transition: transform 0.3s ease;
+}
+
+.card-img:hover {
+  transform: scale(1.02); /* Subtle zoom effect on hover */
+}
+
+.lightbox-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(10, 17, 30, 0.95); /* Deep navy tint overlay */
+  backdrop-filter: blur(5px);
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 85%;
+  max-height: 80vh;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  color: var(--gold-accent);
+  font-size: 45px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.lightbox-close:hover {
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .lightbox-content {
+    max-width: 95%;
+  }
+  .lightbox-close {
+    top: 15px;
+    right: 20px;
+  }
+}
