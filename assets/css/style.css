@@ -836,10 +836,9 @@ textarea {
   padding: 2.5rem;
 }
 
-/* Adds space below the nav by pushing down the first section */
-body > header + section,
-body > header + div {
-  margin-top: 2.5rem; /* Adjust this value (e.g., 1rem to 2rem) to your liking */
+header.site-header, 
+nav.navbar {
+  margin-bottom: 1.5rem; /* Adjust spacing as needed */
 }
 
 /* Responsive fallback for mobile screens */
