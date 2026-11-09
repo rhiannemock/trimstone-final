@@ -52,108 +52,112 @@
     </ul>
   </nav>
 
-   <!-- Showcase Cards -->
-  <section id="rooms" class="section-padding" style="background-color: var(--white);">
+ <!-- Contact & Enquiry Section -->
+  <section id="contact" class="section-padding" style="background-color: var(--white);">
     <div class="container">
-      <div class="text-center">
-        <span class="section-tag">Homely Comfort</span>
-        <h2 class="section-heading">Our Accommodations</h2>
+      <div class="text-center" style="margin-bottom: 50px;">
+        <span class="section-tag">Contact Us</span>
+        <h2 class="section-heading">Get In Touch</h2>
         <div class="gold-divider"></div>
       </div>
 
-      <div class="grid-3">
-        <div class="card">
-          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80');"></div>
-          <div class="card-body">
-            <h3 class="card-title">Manor
+      <div class="contact-grid">
+        
+        <!-- Left Column: Estate Details & Address -->
+        <div class="contact-info-column">
+          <h3 class="contact-subtitle">Trimstone Manor Estate</h3>
+          <p class="contact-desc">
+            We would love to welcome you to our peaceful Devonshire sanctuary. Reach out to us directly or fill out the form to plan your stay.
+          </p>
+
+          <div class="contact-details-list">
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot gold-icon"></i>
+              <div>
+                <strong>Estate Address</strong>
+                <p>Trimstone Lane, West Down<br>Near Woolacombe, Ilfracombe, North Devon, EX34 8NR</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone gold-icon"></i>
+              <div>
+                <strong>Telephone</strong>
+                <p><a href="tel:+441271862841" class="contact-link">01271 862841</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope gold-icon"></i>
+              <div>
+                <strong>Email Enquiries</strong>
+                <p><a href="mailto:info@trimstonemanor.co.uk" class="contact-link">info@trimstonemanor.co.uk</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Enquiry Form -->
+        <div class="contact-form-column">
+          <div class="enquiry-container">
+            <div class="enquiry-header">
+              <h2>Quick Enquiry</h2>
+              <p>Plan your stay with us. Fill out the details below and we'll get back to you shortly.</p>
+            </div>
+
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="enquiry-form">
                 
-                Suites</h3>
-            <p class="card-text">Elegantly appointed rooms featuring classic furnishings, en-suite bathrooms, and idyllic estate views.</p>
-            <a href="#" class="card-link">Explore Suites &rarr;</a>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="checkin">Check-in Date</label>
+                        <input type="date" id="checkin" name="checkin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout">Check-out Date</label>
+                        <input type="date" id="checkout" name="checkout" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guests">Guests</label>
+                        <select id="guests" name="guests">
+                            <option value="1">1 Adult</option>
+                            <option value="2" selected>2 Adults</option>
+                            <option value="3">3 Adults</option>
+                            <option value="4">4+ Adults and children</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="room">Room Preference</label>
+                        <select id="room" name="room">
+                            <option value="standard">Standard Room</option>
+                            <option value="deluxe">Deluxe Room</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Special Requests / Questions</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Let us know if you have any special requirements..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Enquiry</button>
+            </form>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80');"></div>
-          <div class="card-body">
-            <h3 class="card-title">Courtyard Cottages</h3>
-            <p class="card-text">Independent self-catering holiday homes ideal for families, complete with kitchens and cozy lounge spaces.</p>
-            <a href="#" class="card-link">View Cottages &rarr;</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80');"></div>
-          <div class="card-body">
-            <h3 class="card-title">Dining & Lounge</h3>
-            <p class="card-text">Relaxed dining, traditional afternoon tea, and a comfortable resident bar experience.</p>
-            <a href="#" class="card-link">Discover Dining &rarr;</a>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
-
-<!--enquiry form -->
-<section>
-
-    <div class="enquiry-container">
-        <div class="enquiry-header">
-            <h2>Quick Enquiry</h2>
-            <p>Plan your stay with us. Fill out the details below and we'll get back to you shortly.</p>
-        </div>
-
-        <!-- Replace 'https://formspree.io/f/your-form-id' with your actual Formspree endpoint or backend script -->
-        <form action="https://formspree.io/f/your-form-id" method="POST" class="enquiry-form">
-            
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="john@example.com" required>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="checkin">Check-in Date</label>
-                    <input type="date" id="checkin" name="checkin" required>
-                </div>
-                <div class="form-group">
-                    <label for="checkout">Check-out Date</label>
-                    <input type="date" id="checkout" name="checkout" required>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="guests">Guests</label>
-                    <select id="guests" name="guests">
-                        <option value="1">1 Adult</option>
-                        <option value="2" selected>2 Adults</option>
-                        <option value="3">3 Adults</option>
-                        <option value="4">4+ Adults</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="room">Room Preference</label>
-                    <select id="room" name="room">
-                        <option value="standard">Standard Room</option>
-                        <option value="deluxe">Deluxe Room</option>
-                        
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Special Requests / Questions</label>
-                <textarea id="message" name="message" rows="4" placeholder="Let us know if you have any special requirements..."></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn">Send Enquiry</button>
-        </form>
     </div>
   </section>
 
