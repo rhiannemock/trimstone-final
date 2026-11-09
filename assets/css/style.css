@@ -839,7 +839,7 @@ textarea {
 /* Adds space below the nav by pushing down the first section */
 body > header + section,
 body > header + div {
-  margin-top: 1.5rem; /* Adjust this value (e.g., 1rem to 2rem) to your liking */
+  margin-top: 2.5rem; /* Adjust this value (e.g., 1rem to 2rem) to your liking */
 }
 
 /* Responsive fallback for mobile screens */
